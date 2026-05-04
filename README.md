@@ -1,9 +1,8 @@
 # ROM Organizer
 
-⚠️ Note: This script currently runs live. Always test on a copy of your files first.
+⚠️ Always run in dry mode first to preview changes before moving files.
 
 A Python script that organizes ROM files from a single inbox folder into clean, system-specific folders.
-
 ---
 
 ## 🚀 Features
