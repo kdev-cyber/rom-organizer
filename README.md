@@ -1,6 +1,6 @@
 # ROM Organizer
 
-⚠️ Always run in dry mode first to preview changes before organizing files.
+⚠️ Note: This script currently runs live. Always test on a copy of your files first.
 
 A Python script that organizes ROM files from a single inbox folder into clean, system-specific folders.
 
@@ -51,36 +51,29 @@ The script scans a `00_Inbox` folder and:
 ## 📁 Folder Structure
 
 Expected ROM root layout:
-
 ```
 ROMs/
-  00_Inbox/
-  99_Review/
-  NES/
-  SNES/
-  N64/
-  GameBoy/
-  GameBoyColor/
-  GameBoyAdvance/
-  SEGA Genesis/
-  3DS/
+00_Inbox/
+99_Review/
+NES/
+SNES/
+N64/
+GameBoy/
+GameBoyColor/
+GameBoyAdvance/
+SEGA Genesis/
+3DS/
 ```
-
----
 
 ## ⚙️ Usage
 
 1. Place all ROMs into:
 
-```
 00_Inbox
-```
 
 2. Run the script:
 
-```
 python rom_organizer.py
-```
 
 3. Review output in terminal
 
@@ -88,7 +81,6 @@ python rom_organizer.py
 
 ## 🔍 Example Output
 
-```
 [ROM] Mario.nes -> NES/Mario.nes
 [DUPLICATE] Zelda.nes -> Review
 [SAVE] save1.srm -> Review
@@ -96,7 +88,6 @@ python rom_organizer.py
 === Summary ===
 Files processed: X
 Done.
-```
 
 ---
 
@@ -114,7 +105,7 @@ Done.
 - Files are processed from `00_Inbox`
 - Existing library is not overwritten
 - Review folder acts as a safety net
-- Best used regularly to maintain clean ROM library
+- Best used regularly to maintain a clean ROM library
 
 ---
 
